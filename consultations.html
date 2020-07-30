@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Astro Assist</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+
+<ul>
+  <li><a href="home.html" class="inactive">Home</a></li>
+  <li><a href="articles.html" class="inactive">Informative Articles</a></li>
+  <li><a href="consultations.html" class="active">Consultations</a></li>
+  <li><a href="aboutme.html" class="inactive">About me</a></li>
+  <li><a href="contact.html" class="inactive">Contact</a></li>
+</ul>
+
+<div class="main">
+
+  <div class="left">
+    <img src="images/logo.png" alt="Astro Assist Logo" height="200" width="200">
+  </div>
+
+  <div class="center">
+    <div class="centertext">
+      <h1 class="center_text_title">Astro Assist Consultations</h1>
+      <div class ="center_text_words">
+        <p>Please select which consultations you would like.</p>
+        <form>
+          <label><input type="checkbox" id="checkbox_psy">Psychology Analysis</label>
+          <br><label><input type="checkbox" id="checkbox_career">Career Consultation</label>
+          <br><label><input type="checkbox" id="checkbox_relation">Relationship Compatibility</label>
+          <br><label><input type="checkbox" id="checkbox_event">Find the Best Time for an Event</label>
+        </form>
+        <p>Total: <span id="total">$0</span></p>
+        <p><a href="contact.html" class ="center_text_link">Contact us</a> for getting one or more consultations.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <img src="images/consult.jpg" alt="Open book with glowing astrology symbols coming out" height="237" width="316">  
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body { 
+  background-color: powderblue;
+  background-image: url("images/stars.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(143, 106, 158);
+  width: 1029px;
+  position: fixed;
+  margin-top:-70px;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+li {
+  float: left;
+  font-family: Bahnschrift, Ariel;
+  font-size: 200%;
+}
+
+li a {
+  display: block;
+  color: rgb(143, 106, 158);
+  text-shadow: 2px 2px rgb(209, 159, 228);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+/* Change the link color to light purple on hover */
+li a:hover {
+  background-color: rgb(209, 159, 228);
+}
+
+/* Active page is a lighter brown-purple color */
+.active{
+  background-color: rgb(234, 214, 205);
+}
+
+/* Inactive pages are the light brown */
+.inactive {
+  background-color: rgb(228, 199, 159);
+}
+
+/* Wireframe */
+
+.main {
+  margin-top:80px;
+}
+
+.left{
+  width: 200px;
+  float:left;
+  margin-top:0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 60px;
+  position: fixed;
+}
+
+.center{
+  width: 769px;
+  float:left;
+  margin-top:40px;
+  margin-bottom: 40px;
+  margin-left: 260px;
+  margin-right: 60px;  background-color: rgb(234, 214, 205);
+  opacity: 0.9;
+}
+
+.centertext{  float:left;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: Bahnschrift, Ariel;
+  color: rgb(209, 159, 228);
+}
+
+.center_text_title {
+  margin-left: 30px;
+  font-size: 250%;
+  text-shadow: 2px 2px rgb(143, 106, 158);
+}
+
+.center_text_words {
+  text-shadow: 1px 1px rgb(228, 199, 159);
+  color: rgb(143, 106, 158);
+  margin-bottom: 10px;
+}
+
+a:link {
+  text-decoration: none
+}
+
+.center_text_link { 
+  text-shadow: 1px 1px rgb(228, 199, 159);
+  color: rgb(174, 148, 186);
+}
+
+.right{
+  float:left;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.inline_image {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}

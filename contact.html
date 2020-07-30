@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Astro Assist</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+
+<ul>
+  <li><a href="home.html" class="inactive">Home</a></li>
+  <li><a href="articles.html" class="inactive">Informative Articles</a></li>
+  <li><a href="consultations.html" class="inactive">Consultations</a></li>
+  <li><a href="aboutme.html" class="inactive">About me</a></li>
+  <li><a href="contact.html" class="active">Contact</a></li>
+</ul>
+<div></div>
+<div class="main">
+
+  <div class="left">
+    <img src="images/logo.png" alt="Astro Assist" height="200" width="200">
+  </div>
+
+  <div class="center">
+    <div class="centertext">
+      <h1 class="center_text_title">Contact</h1>
+      <div class ="center_text_words">
+      <p>Contact form</p>
+<p> Please fill out this form to tell us about your inquiry.</p>
+        
+        <!-- this tag starts the the form, gives the method of sending -->
+        <!--  information to the location of the form-processing script -->
+        <form method="post" action="contact.html">
+            <!-- hidden inputs contain non-visual information that will also be submitted -->
+            <input type="hidden" name="recipient" value="http://www.josiah.com">
+            <input type="hidden" name="subject" value="Feedback Form">
+            <input type="hidden" name="redirect" value="home.html">
+            
+            <!-- <input type = "text"> inserts a text field -->
+            <p><label>Name:
+                    <input name="name" type="text" size="25" maxlength="25">
+                </label></p>
+            <p><label>E-mail:
+                    <input name="email" type="text" size="25" maxlength="50">
+                </label></p>
+            <p>
+                <strong>Reasons for contacting: </strong><br>
+                
+                <label>Questions
+                    <input name="reasons" type="checkbox" value="Questions"></label>
+                <label>Suggestions
+                    <input name="reasons" type="checkbox" value="Suggestions"></label>
+                <label>Consultations
+                    <input name="reasons" type="checkbox" value="Consultations"></label>
+                <label>Events
+                    <input name="reasons" type="checkbox" value="Events"></label>
+                <label>Media
+                    <input name="reasons" type="checkbox" value="Media"></label>
+            </p>
+            <p>
+                <strong>How did you find this website?</strong><br>
+                
+                <label>Search Engine
+                    <input name="interestedhow" type="radio" value="Search"></label>
+                <label>Social Media
+                    <input name="interestedhow" type="radio" value="Social"></label>
+                <label>Referral
+                    <input name="interestedhow" type="radio" value="Referral"></label>
+                <label>Other
+                    <input name="interestedhow" type="radio" value="Other"></label>
+            </p>
+            <p><label>Message:<br>
+                <textarea name="comments" rows="4" cols="36" placeholder="Please enter message here."></textarea></label>
+            </p>
+            <p>
+                <!-- input types "submit" and "reset" insert buttons for submitting -->
+                <!-- and clearing the form's contents, respectively -->
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </p>
+        </form>
+      <p id="after_form"></p>  
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <img src="images/message.png" alt="Mercury, the messenger" height="305" width="254">  
+  </div>
+</div>
+</body>
+</html>
